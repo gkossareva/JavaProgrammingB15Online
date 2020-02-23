@@ -1,0 +1,62 @@
+package Repl;
+import java.util.Arrays;
+import java.util.Scanner;
+public class Repl152 {
+
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+        int size = inp.nextInt();
+
+        int[] arr = new int[size];
+        for (int i = 0; i <= size - 1; i++) {
+
+            arr[i] = inp.nextInt();
+        }
+
+        for (int x = 0; x <size ; x++) {
+            isPos(arr[x]);
+        }
+
+    }
+
+    public static void isPos(int num) {
+
+        if (num>0){
+            System.out.println("positive");
+        }
+        else{
+            System.out.println("not positive");
+        }
+    }
+}
+
+//isPos is a method that checks if  an int positive or not positive
+//
+//1. If  the int num is positive print positive else print not positive
+//
+//2. Complete main method by calling isPos method for each element in the array arr.
+  /*          plus_minus(arr);
+        }//end main
+
+    int count=0;
+
+        if (i>0){
+            count++;
+            System.out.println("positives:"+count);
+        }else if (i<0){
+            count++;
+            System.out.println("negatives:"+count);
+        }else if(i==0){
+            count++;
+            System.out.println("zeros:"+count);
+        }
+    }*/
+
+//Create a method called plus_minus that gets an array of ints (int[]), it outputs how many negative , positive and zero numbers are in the array.
+//
+//for example:
+//
+//plus_minus (new int[]{1,2,55,-9,-2,0});
+//
+//will output:
+//positives:3, negatives:2, zeros:1
